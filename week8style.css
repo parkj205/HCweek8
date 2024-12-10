@@ -1,0 +1,489 @@
+body{
+    background-color:#ffffff;
+text-align: center;
+height: 2750px;
+}
+
+.background {
+    position: fixed;
+    top: 0; 
+    left: 0; 
+    width: 100vw; 
+    height: 100vh;
+    background-color:#0000ff; 
+    z-index: -1000;
+  }
+
+  .spacer{
+    width: 400px;
+    height: 250px;
+    margin-top: 200px;
+  }
+
+  .week8title{
+    margin-top: 100px;
+    margin-left: 31%;
+    position: absolute;
+    animation: titlemove 5s infinite linear;
+  }
+  
+  .week8title2{
+    margin-top: 100px;
+    margin-left: 31%;
+    position: absolute;
+    animation: titlemove 5s infinite linear;
+    animation-delay: 2.5s;
+  }
+
+.title8{
+    animation: titleappear 2.5s ease-out forwards;
+    opacity: 0;
+  }
+  
+  @keyframes titleappear {
+    0% {
+        opacity: 0;
+      }
+      99.99% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+
+    .week81{
+      position: absolute;
+      width: 600px;
+      height: 200px;
+      animation: titleanim 1s steps(1) infinite;
+  }
+  
+  .week81 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+  }
+  
+  .week82{
+      position: absolute;
+      width: 600px;
+      height: 200px;
+      animation: titleanim2 1s steps(1) infinite;
+  }
+  .week82 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+  }
+
+  @keyframes titlemove {
+    0% {
+      transform: translateX(1000px);
+    }
+    50%{
+        transform: translateX(0px);
+    }
+    100% {
+        transform: translateX(-1000px);
+    }
+  }
+
+
+  
+  @keyframes titleanim {
+      0% {
+        transform: scale(0); 
+      }
+      50% {
+          transform: scale(1);
+      }
+  }
+  
+  @keyframes titleanim2 {
+      0% {
+        transform: scale(1); 
+      }
+      50% {
+          transform: scale(0);
+      }
+  }
+  
+ 
+  .frame1{
+    position: absolute;
+    width: 120px;
+    height: 100px;
+    animation: fly .5s infinite;
+    animation-delay: 0s;
+  }
+  .frame1 img{
+    width: 150%;
+    height: 150%;
+    object-fit: cover; 
+  }
+  
+  
+  
+  
+  .frame2{
+    position: absolute;
+    width: 120px;
+    height: 100px;
+    animation: fly .5s infinite;
+    animation-delay: .125s;
+  }
+  .frame2 img{
+    width: 150%;
+    height: 150%;
+    object-fit: cover; 
+  }
+  
+  
+  
+  .frame3{
+    position: absolute;
+    width: 120px;
+    height: 100px;
+    animation: fly .5s infinite;
+    animation-delay: .25s;
+  }
+  .frame3 img{
+    width: 150%;
+    height: 150%;
+    object-fit: cover; 
+  }
+  
+  
+  
+  
+  .frame4{
+    position: absolute;
+    width: 120px;
+    height: 100px;
+    animation: fly .5s infinite;
+    animation-delay: .375s;
+  }
+  .frame4 img{
+    width: 150%;
+    height: 150%;
+    object-fit: cover; 
+  }
+  
+  
+  @keyframes fly {
+    0% { opacity: 0; }
+    25% { opacity: 1; }
+    50% { opacity: 0; }
+    75% { opacity: 0; }
+    100% { opacity: 0; }
+  }
+
+
+
+
+
+
+
+
+
+
+
+  .image1{
+    position: absolute;
+    margin-left: -70px;
+    margin-top: 50px;
+    animation: sway 4s infinite linear;
+  }
+
+  .propel1{
+    animation: panning 3.5s infinite;
+    margin-left: 20%;
+    margin-top: 500px;
+  }
+
+
+
+  .image2{
+    position: absolute;
+    margin-left: -70px;
+    margin-top: 50px;
+    animation: sway 4s infinite linear;
+    animation-delay: 1s;
+  }
+
+  .propel2{
+    position: absolute;
+    animation: panning 3.5s infinite;
+    animation-delay: 1s;
+    margin-left: 68%;
+    margin-top: 600px;
+  }
+
+
+
+  .image3{
+    position: absolute;
+    margin-left: -70px;
+    margin-top: 50px;
+    animation: sway 4s infinite linear;
+  }
+
+  .propel3{
+    animation: panning 3.5s infinite;
+    margin-left: 30%;
+    margin-top: 1550px;
+  }
+
+
+
+ @keyframes sway {
+  0% {
+    rotate: 0deg;
+  }
+  25% {
+    rotate: 6deg;
+  }
+  50% {
+    rotate: 0deg;
+  }
+  75% {
+    rotate: -6deg;
+  }
+  100% {
+    rotate: 0deg;
+  }
+}
+
+ @keyframes panning {
+  0% {
+    transform: translatey(0px);
+  }
+
+  50% {
+    transform: translatey(50px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
+
+
+
+
+
+
+.plane1{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    margin-top: 900px;
+    margin-left: 400px;
+    animation: plane1anim 3s steps(1) infinite;
+    animation-delay: .5s;
+}
+
+.plane1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+@keyframes plane1anim {
+    0% {
+      transform: scale(1); 
+    }
+    50% {
+        transform: scale(0);
+    }
+}
+
+
+.plane2{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    margin-top: 900px;
+    margin-left: 400px;
+    animation: plane2anim 3s steps(1) infinite;
+    animation-delay: .5s;
+}
+
+@keyframes plane2anim {
+    0% {
+      transform: scale(0); 
+    }
+    50% {
+        transform: scale(1);
+    }
+}
+
+
+.plane2 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+
+.planediv1{
+    animation: planemove 3s infinite ease-in-out;
+    animation-delay: .5s;
+}
+
+@keyframes planemove {
+    0% {
+      transform: translatex(0px); 
+    }
+    50% {
+        transform: translatex(600px);
+    }
+    100% {
+        transform: translatex(0px); 
+}
+}
+
+
+.balloon{
+    position: absolute;
+    width: 150px;
+    height: 200px;
+    margin-top: 400px;
+    margin-left: 420px;
+    animation: balloonanim 3.5s infinite;
+}
+.balloon img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+@keyframes balloonanim {
+    0% {
+      transform: translatey(-50px);
+    }
+  
+    50% {
+      transform: translatey(-150px);
+    }
+    100% {
+      transform: translatey(-50px);
+    }
+  }
+  
+
+
+  .oct25{
+    position: absolute;
+    margin-left: 50%;
+    margin-top: -100px;
+    width: 120px;
+    height: 100px;
+    animation: panning 3s infinite;
+    animation-delay: 0s;
+  }
+  .oct25 img{
+    width: 150%;
+    height: 150%;
+    object-fit: cover; 
+  }
+
+
+  .oct27{
+    position: absolute;
+    margin-left: 15%;
+    margin-top: 600px;
+    width: 120px;
+    height: 100px;
+    animation: panning 3s infinite;
+    animation-delay: 0s;
+  }
+  .oct27 img{
+    width: 150%;
+    height: 150%;
+    object-fit: cover; 
+  }
+
+  .t27text{
+    position: absolute;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-size: 17px;
+    width: 200px;
+    margin-top: 800px;
+    margin-left: 14.5%;
+    color:  rgb(228, 255, 0);
+    animation: panningtext 3s infinite;
+    animation-delay: .5s;
+  }
+
+  @keyframes panningtext {
+    0% {
+      transform: translatey(0px);
+    }
+  
+    50% {
+      transform: translatey(20px);
+    }
+    100% {
+      transform: translatey(0px);
+    }
+  }
+
+  .shirt1{
+    position: absolute;
+    margin-left: 600px;
+    margin-top: 100px;
+    animation: sway 4s infinite linear;
+  }
+
+  .shirt2{
+    position: absolute;
+    margin-left: 500px;
+    margin-top: 570px;
+    animation: sway 4s infinite linear;
+    animation-delay: 2s;
+    z-index: -10;
+  }
+
+  .shirt11{
+    animation: panning 4s infinite;
+  }
+
+  .shirt22{
+    animation: panning 4s infinite;
+    animation-delay: 2s;
+    position: absolute;
+    z-index: -10;
+  }
+
+
+
+  .t25text{
+    position: absolute;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-size: 17px;
+    width: 200px;
+    margin-top: 100px;
+    margin-left: 60%;
+    color:  rgb(228, 255, 0);
+    animation: panningtext 3s infinite;
+    animation-delay: .5s;
+  }
+
+
+
+  .text8{
+    position: absolute;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-size: 17px;
+    width: 200px;
+    margin-top: 200px;
+    margin-left: 50%;
+    color:  rgb(228, 255, 0);
+    animation: panningtext 3s infinite;
+    animation-delay: .5s;
+  }
